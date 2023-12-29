@@ -7,8 +7,6 @@
 
 DreamTalk is a diffusion-based audio-driven expressive talking head generation framework that can produce high-quality talking head videos across diverse speaking styles. DreamTalk exhibits robust performance with a diverse array of inputs, including songs, speech in multiple languages, noisy audio, and out-of-domain portraits.
 
-![architecture](media/dreamtalk_pipeline.png "architecture")
-
 ## News
 - __[2023.12]__ Release inference code and pretrained checkpoint.
 
