@@ -1,0 +1,17 @@
+common:
+  descriptor_nc: 256
+  image_nc: 3
+  max_nc: 256
+  use_spect: false
+editing_net:
+  base_nc: 64
+  layer: 3
+  num_res_blocks: 2
+mapping_net:
+  coeff_nc: 73
+  descriptor_nc: 256
+  layer: 3
+warpping_net:
+  base_nc: 32
+  decoder_layer: 3
+  encoder_layer: 5
