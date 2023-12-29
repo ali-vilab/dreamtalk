@@ -1,12 +1,13 @@
-# DreamTalk: When Expressive Talking Head Generation Meets Diffusion Probabilistic Models
+<h2 align="center">DreamTalk: When Expressive Talking Head Generation <br> Meets Diffusion Probabilistic Models</h2>
+<p align="center">
+  <a href='https://dreamtalk-project.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='https://arxiv.org/abs/2312.09767'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://youtu.be/VF4vlE6ZqWQ'><img src='https://badges.aleen42.com/src/youtube.svg'></a>
+</p>
 
-<a href='https://dreamtalk-project.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='https://arxiv.org/abs/2312.09767'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> [![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://youtu.be/VF4vlE6ZqWQ)
-
-![architecture](media/dreamtalk_pipeline.png "architecture")
+![teaser](media/teaser.gif "teaser")
 
 DreamTalk is a diffusion-based audio-driven expressive talking head generation framework that can produce high-quality talking head videos across diverse speaking styles. DreamTalk exhibits robust performance with a diverse array of inputs, including songs, speech in multiple languages, noisy audio, and out-of-domain portraits.
 
-![figure1](media/teaser.gif "teaser")
+![architecture](media/dreamtalk_pipeline.png "architecture")
 
 ## News
 - __[2023.12]__ Release inference code and pretrained checkpoint.
