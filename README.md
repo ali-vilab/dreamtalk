@@ -25,12 +25,10 @@ pip install dlib
 ```
 
 ## Download Checkpoints
-Download the checkpoint of the denoising network: 
-* [ModelScope](https://modelscope.cn/models/damo/dreamtalk/file/view/master/checkpoints%2Fdenoising_network.pth?status=2)
+Download the checkpoint of the denoising network and the renderer:
+* [HuggingFace](https://huggingface.co/damo-vilab/dreamtalk)
+* [ModelScope](https://modelscope.cn/models/damo/dreamtalk/files) (in `checkpoints` folder)
 
-
-Download the checkpoint of the renderer: 
-* [ModelScope](https://modelscope.cn/models/damo/dreamtalk/file/view/master/checkpoints%2Frenderer.pt?status=2)
 
 Put the downloaded checkpoints into `checkpoints` folder.
 
