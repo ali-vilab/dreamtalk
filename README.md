@@ -8,6 +8,7 @@
 DreamTalk is a diffusion-based audio-driven expressive talking head generation framework that can produce high-quality talking head videos across diverse speaking styles. DreamTalk exhibits robust performance with a diverse array of inputs, including songs, speech in multiple languages, noisy audio, and out-of-domain portraits.
 
 ## News
+- __[2024.01]__ [fffiloni](https://huggingface.co/fffiloni) provides a HuggingFace Space <a href='https://huggingface.co/spaces/fffiloni/dreamtalk'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>. Thanks~
 - __[2023.12]__ Release inference code and pretrained checkpoint.
 
 ## Installation
@@ -73,6 +74,10 @@ The generated video will be named `$(output_name).mp4` and put in the output_vid
 
 Sample inputs are presented in `data` folder. Due to copyright issues, we are unable to include the songs we have used in this folder.
 
+## Ad-hoc solutions to improve resolution
+The main goal of this method is to achieve accurate lip-sync and produce vivid expressions across diverse speaking styles. The resolution was not considered in the initial design process. There are two ad-hoc solutions to improve resolution. The first option is to utilize [CodeFormer](https://github.com/sczhou/CodeFormer), which can achieve a resolution of $1024\times1024$; however, it is relatively slow, processing only one frame per second on an A100 GPU, and suffers from issues with temporal inconsistency. The second option is to employ the Temporal Super-Resolution Model from [MetaPortrait](https://github.com/Meta-Portrait/MetaPortrait), which attains a resolution of $512\times512$, offers a faster performance of 10 frames per second, and maintains temporal coherence. However, these super-resolution modules may reduce the intensity of facial emotions.
+
+The sample results after super-resolution processing are in the `output_video` folder.
 
 ## Acknowledgements
 
