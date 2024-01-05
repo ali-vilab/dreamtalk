@@ -74,6 +74,8 @@ The generated video will be named `$(output_name).mp4` and put in the output_vid
 
 Sample inputs are presented in `data` folder. Due to copyright issues, we are unable to include the songs we have used in this folder.
 
+If you want to run this program on CPU, please add `--device=cpu` to the command line arguments. (Thank [lukevs](https://github.com/lukevs) for adding CPU support.)
+
 ## Ad-hoc solutions to improve resolution
 The main goal of this method is to achieve accurate lip-sync and produce vivid expressions across diverse speaking styles. The resolution was not considered in the initial design process. There are two ad-hoc solutions to improve resolution. The first option is to utilize [CodeFormer](https://github.com/sczhou/CodeFormer), which can achieve a resolution of $1024\times1024$; however, it is relatively slow, processing only one frame per second on an A100 GPU, and suffers from issues with temporal inconsistency. The second option is to employ the Temporal Super-Resolution Model from [MetaPortrait](https://github.com/Meta-Portrait/MetaPortrait), which attains a resolution of $512\times512$, offers a faster performance of 10 frames per second, and maintains temporal coherence. However, these super-resolution modules may reduce the intensity of facial emotions.
 
