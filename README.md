@@ -8,7 +8,6 @@
 DreamTalk is a diffusion-based audio-driven expressive talking head generation framework that can produce high-quality talking head videos across diverse speaking styles. DreamTalk exhibits robust performance with a diverse array of inputs, including songs, speech in multiple languages, noisy audio, and out-of-domain portraits.
 
 ## News
-- __[2024.01]__ [fffiloni](https://huggingface.co/fffiloni) provides a HuggingFace Space <a href='https://huggingface.co/spaces/fffiloni/dreamtalk'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>. Thanks~
 - __[2023.12]__ Release inference code and pretrained checkpoint.
 
 ## Installation
@@ -26,10 +25,7 @@ pip install dlib
 ```
 
 ## Download Checkpoints
-Download the checkpoint of the denoising network and the renderer:
-* [HuggingFace](https://huggingface.co/damo-vilab/dreamtalk)
-* [ModelScope](https://modelscope.cn/models/damo/dreamtalk/files) (in `checkpoints` folder)
-
+In light of the social impact, we have ceased public download access to checkpoints. If you want to obtain the checkpoints, please request it by emailing mayf18@mails.tsinghua.edu.cn . It is important to note that sending this email implies your consent to use the provided method **solely for academic research purposes**.
 
 Put the downloaded checkpoints into `checkpoints` folder.
 
@@ -102,5 +98,7 @@ If you find this codebase useful for your research, please use the following ent
   year={2023}
 }
 ```
+## Disclaimer
 
+This method is intended for <strong>RESEARCH/NON-COMMERCIAL USE ONLY</strong>. 
 
